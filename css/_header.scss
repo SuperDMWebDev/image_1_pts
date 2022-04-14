@@ -1,0 +1,42 @@
+.header {
+    margin: $top-spacing 0px;
+    height: 15rem;
+    &_title{
+      background: url("../img/moon_house.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 12rem;
+      height: 8rem;
+    }
+    &_container{
+      border-top: 1px solid #5a5a5a;
+      border-left: 5px solid #000000;
+      border-right: 5px solid #000000;
+      border-bottom: 10px solid #000000;
+      border-radius: 20px;
+      height: 100%;
+      padding: 0 4rem;
+    }
+    &_content{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+    &_extra{
+      display: flex;
+    align-items: center;
+    }
+    &_extra_content{
+      font-size: 35px;
+      margin-right: 25px;
+    }
+    &_extra_icon{
+      background-image: url("../img/happy.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 35px;
+      height: 35px;
+    }
+  }

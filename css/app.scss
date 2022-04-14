@@ -1,0 +1,83 @@
+@import "variable";
+@import "header";
+@import "banner";
+@import "feature";
+@import "item";
+@import "navbar";
+@import "review";
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+input {
+  line-height: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+.app {
+  max-width: 944px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 $left-spacing;
+}
+
+.title {
+  margin-bottom: $bottom-item-spacing;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.h-33 {
+  height: calc(100% / 3);
+}
+
+.w-288 {
+  width: 24%;
+}
+
+.clear {
+  clear: both;
+}

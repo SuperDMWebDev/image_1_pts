@@ -1,0 +1,39 @@
+.banner {
+  margin-bottom: $top-spacing;
+  &_round {
+    border-top: 1px solid #5a5a5a;
+    border-left: 5px solid #000000;
+    border-right: 5px solid #000000;
+    border-bottom: 10px solid #000000;
+    border-radius: 40px;
+  }
+  &_container {
+    background-image: url("../img/banner.png");
+    width: 100%;
+    padding-top: 36.28%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    border-radius: inherit;
+  }
+  &_extra_left {
+    background-image: url(../img/eye.png);
+    width: 8rem;
+    height: 16rem;
+    left: -15px;
+    top: 50px;
+    transform: translate(0px, -50%);
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+  &_extra_right {
+    background-image: url(../img/miss_you.png);
+    background-repeat: no-repeat;
+    width: 18rem;
+    height: 16rem;
+    position: absolute;
+    top: -82px;
+    right: -17px;
+    transform: rotate(0deg);
+  }
+}
