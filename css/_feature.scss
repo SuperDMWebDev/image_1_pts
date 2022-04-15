@@ -12,6 +12,14 @@
       flex-wrap: wrap;
       align-items: center;
       height: 100%;
+      @media screen and (max-width: 850px)
+      {
+        gap : 0 100px;
+      }
+
+      @media screen and(max-width: 600px){
+          flex-direction :column;
+      }
     }
     &_content {
       font-size: 25px;
@@ -24,6 +32,7 @@
   }
   .dog {
     &_care {
+     
     }
     &_image {
       width: $feature-width;
@@ -34,10 +43,12 @@
       background-size: contain;
       position: relative;
     }
+   
   }
   
   .raw {
     padding-bottom: 5rem;
+  
     &_image {
       width: 21rem;
       height: 21rem;
@@ -45,6 +56,17 @@
       background-repeat: no-repeat;
       background-size: contain;
       position: relative;
+      background-position:center;
+      @media screen and (max-width: 600px)
+      {
+        width:100%;
+      }
+    }
+  
+    @media screen and (max-width: 600px)
+    {
+      width:100%;
+      padding-bottom: 0px;
     }
   }
   

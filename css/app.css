@@ -96,6 +96,16 @@
   align-items: center;
   height: 100%;
 }
+@media screen and (max-width: 850px) {
+  .feature_container {
+    gap: 0 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .feature_container {
+    flex-direction: column;
+  }
+}
 .feature_content {
   font-size: 25px;
   text-transform: uppercase;
@@ -124,6 +134,18 @@
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
+  background-position: center;
+}
+@media screen and (max-width: 600px) {
+  .raw_image {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .raw {
+    width: 100%;
+    padding-bottom: 0px;
+  }
 }
 
 .other_image {
@@ -161,6 +183,11 @@
   width: 100%;
   height: 42.4rem;
   text-align: center;
+}
+@media screen and (max-width: 700px) {
+  .item_element {
+    height: 34.4rem;
+  }
 }
 .item_background {
   height: 100%;
@@ -214,40 +241,55 @@
   height: 14.5rem;
   width: 100%;
   padding: 1.2rem 2.7rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
-  grid-auto-rows: auto;
-  grid-gap: 1rem 4.7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .home {
   background: url("../img/house.png");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
+  width: 18%;
+  height: 100%;
 }
 
 .cart {
   background: url("../img/cart.png");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
+  width: 18%;
+  height: 100%;
 }
 
 .plus {
   background: url("../img/plus.png");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
+  width: 18%;
+  height: 100%;
 }
 
 .menu {
   background: url("../img/menu.png");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
+  width: 18%;
+  height: 100%;
 }
 
 .circle {
   background: url("../img/circle.png");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
+  width: 18%;
+  height: 100%;
 }
 
 .review {
