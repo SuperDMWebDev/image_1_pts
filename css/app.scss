@@ -5,6 +5,7 @@
 @import "item";
 @import "navbar";
 @import "review";
+@import "product";
 html,
 body {
   height: 100%;
@@ -80,4 +81,9 @@ h6 {
 
 .clear {
   clear: both;
+}
+.flex-row{
+  display:flex;
+  flex-direction: row;
+  justify-content:flex-start;
 }
